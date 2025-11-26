@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ej JS</title>
+</head>
+
+<body>
+
+    <!-- EJ 1 -->
+    <script>
+        document.writeln("Hola Mundo" + "<br>");
+    </script>
+
+
+    <!-- EJ 2   -->
+    <script>
+        let a = 10;
+        let b = 5;
+        let resultado = a + b;
+        alert("El resultado de la suma es: " + resultado);
+    </script>
+
+    <!-- EJ 3 -->
+    <script>
+        let c = 10;
+        let d = 5;
+        alert("Los valores iniciales eran" + c + "y" + d);
+        c = a + 1;
+        d = b + 5;
+        alert("Los valores finales son" + c + "y" + d);
+    </script>
+
+    <!-- EJ 4 -->
+    <script>
+        const palabra1 = "hola";
+        let palabra2 = "mundo!";
+        document.writeln("Constante:" + palabra + "<br>");
+        document.writeln("Variable 2:" + palabra2 + "<br>");
+        document.writeln("Suma de ambos:" + (palabra1 + palabra2) + "<br>");
+    </script>
+
+    <!-- EJ 5 -->
+    <script>
+        const x = [1, 2, 3, 4, 5];
+        let z = "mundo!";
+        x[0] = Hola;
+        document.write("Variable:" + z + "<br>");
+        document.write("Suma de ambos:" + (x + z) + "<br>");
+        document.write(`Suma con template literal: ${x + z}` + "<br>");
+    </script>
+
+    <!-- EJ 6 -->
+    <script>
+        let dato, result;
+        dato = window.prompt("Ingresa tu nombre:", "Desconocido");
+        result = `hola, como estas ${dato}`;
+
+        document.write(result + "<br>");
+    </script>
+
+    <p><br>Todo lo que se teclea son letras</p>
+
+</body>
+
+</html>
