@@ -1,0 +1,23 @@
+<!-- Crea una página que pida al usuario un número entero positivo y diga cuántas
+cifras tiene (pista: se puede conseguir dividiendo varias veces entre 10). -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        let num = Number(prompt("Introduce un entero positivo:"));
+        let cifras = 0;
+
+        while (num >= 1) {
+            num = num / 10;
+            cifras++;
+        }
+
+        document.write(cifras);
+    </script>
+
+</body>
+
+</html>

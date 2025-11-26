@@ -1,0 +1,27 @@
+<!-- Crea una página que pida al usuario una serie de números, hasta que se pulse
+Intro sin escribir nada (se introduzca una cadena vacía), momento en el que se
+dejará de pedir datos y se mostrará la suma de todos ellos. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        let numero = "0";
+        let suma = 0;
+
+        while (numero !== "") {
+            numero = prompt("Introduce un número (pulsa intro para terminar):");
+
+            if (numero !== "") {
+                suma += Number(numero);
+            }
+        }
+
+        document.write(suma);
+    </script>
+
+</body>
+
+</html>

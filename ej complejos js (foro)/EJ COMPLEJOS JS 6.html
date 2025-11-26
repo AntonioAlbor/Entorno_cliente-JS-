@@ -1,0 +1,41 @@
+<!-- Crea una página web que genere un número al azar entre el 1 el 10 y dé al usuario
+4 oportunidades para acertarlo, indicando en cada paso si el número que ha
+tecleado es el correcto, es mayor o es menor. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+
+        let num_secreto = Math.random() * 10 + 1;
+       num_secreto = num_secreto | 0;
+
+        let intentos = 0;
+        let acierto = false;
+
+        while (intentos < 4) {
+            let n = Number(prompt("Adivina el número (1-10):"));
+            intentos++;
+
+            if (n === num_secreto) {
+                acierto = true;
+                break;
+            } else if (n < num_secreto) {
+                alert("El número es mayor");
+            } else {
+                alert("El número es menor");
+            }
+        }
+
+        if (acierto) {
+            document.write("¡Has acertado!");
+        } else {
+            document.write("No has acertado. El número era " + num_secreto);
+        }
+    </script>
+
+</body>
+
+</html>

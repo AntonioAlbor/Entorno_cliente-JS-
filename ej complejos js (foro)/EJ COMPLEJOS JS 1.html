@@ -1,0 +1,25 @@
+<!-- Crea una página web que muestre los números pares del 10 al 20 (ambos incluidos), usando "while"-->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        let num = 10;
+        let resultado = "";
+
+        while (num <= 20) {
+            if (num % 2 === 0) {
+                resultado += num + " ";
+            }
+            num++;
+        }
+
+        document.write(resultado);
+    </script>
+
+</body>
+
+</html>

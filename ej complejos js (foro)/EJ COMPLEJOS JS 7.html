@@ -1,0 +1,25 @@
+<!-- Crea una página web que pida al usuario su nombre y su contraseña, y se repita
+hasta que introduzca como nombre "Juan" y como contraseña "1234" -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let usuario = "";
+let contra = "";
+
+while (usuario !== "Juan" || contra !== "1234") {
+    usuario = prompt("Ingrese usuario");
+    contra = prompt("Ingrese contraseña");
+
+    if (usuario !== "Juan" || contra !== "1234") {
+        alert("Usuario o contraseña incorrectos. Inténtelo de nuevo.");
+    }
+}
+
+document.write("¡Bienvenido, Juan!");
+</script>
+
+</body>
+</html>
